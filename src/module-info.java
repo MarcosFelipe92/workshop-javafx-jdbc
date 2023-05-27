@@ -5,4 +5,6 @@ module workshop_javafx_jdbc {
     requires javafx.fxml;
 	requires javafx.base;
 	requires transitive javafx.graphics;
+	opens gui to javafx.fxml;
+    exports gui;
 }
