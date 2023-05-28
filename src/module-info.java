@@ -7,4 +7,6 @@ module workshop_javafx_jdbc {
 	requires transitive javafx.graphics;
 	opens gui to javafx.fxml;
     exports gui;
+    opens model.entities to javafx.fxml;
+    exports model.entities;
 }
