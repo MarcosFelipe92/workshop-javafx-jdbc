@@ -15,4 +15,7 @@ module workshop_javafx_jdbc {
     
     opens model.services to javafx.fxml;
     exports model.services;
+    
+    opens gui.listeners to javafx.fxml;
+    exports gui.listeners;
 }
