@@ -4,7 +4,6 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.function.Consumer;
-
 import application.Main;
 import gui.util.Alerts;
 import javafx.fxml.FXML;
