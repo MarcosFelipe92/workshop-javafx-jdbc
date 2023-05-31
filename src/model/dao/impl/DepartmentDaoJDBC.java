@@ -34,6 +34,10 @@ public class DepartmentDaoJDBC implements DepartmentDao {
 					Statement.RETURN_GENERATED_KEYS);
 			st.setString(1, obj.getName());
 			
+			if(obj.getName() == null) {
+				return;
+			}
+			
 			int rowsaffected = st.executeUpdate();
 			if(rowsaffected > 0) {
 				ResultSet rs = st.getGeneratedKeys();
